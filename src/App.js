@@ -7,6 +7,7 @@ import RandomFontOnWhite from './pages/random_font_on_white';
 import RandomFontOnBlack from './pages/random_font_on_black';
 import ChooseColors from './pages/choose_background_and_font';
 import ErrorPage from './pages/error_page';
+import Home from './pages/home';
 
 function App() {
 
@@ -14,12 +15,12 @@ function App() {
 
     <Router>
     <Routes>
-      <Route path='/' element={< AllColors />} />
+      <Route path='/' element={< Home />} />
       <Route path='/random-background' element={<RandomBackground />} /> 
       <Route path='/random-font-on-white' element={<RandomFontOnWhite />} /> 
       <Route path='/random-font-on-black' element={<RandomFontOnBlack />} /> 
       <Route path='/choose-colors' element={<ChooseColors />} />
-      <Route path='/home' element = {<AllColors />} />
+      <Route path='/home' element = {<Home />} />
       <Route path="*" element={<ErrorPage/>} /> 
     </Routes>
   </Router>
